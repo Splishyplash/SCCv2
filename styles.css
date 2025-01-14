@@ -1,0 +1,18 @@
+nav ul {
+    padding-top: 25px;
+    gap: 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    padding-left: 0;
+}
+.middle {
+    display: flex;
+    justify-content: center;
+}
+.clipboard {
+    justify-content: center;
+    width: 200px;
+    background-image: url("./Assets/test\ sheet.png")
+}
