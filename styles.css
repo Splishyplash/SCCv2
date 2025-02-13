@@ -1,6 +1,46 @@
-nav ul {
+@font-face {
+    font-family: "SCC";
+    src: url(Assets/SCC-Font.ttf)
+}
+.text {
+    font-family: "SCC";
+}
+#headline {
+    background-color: #8adbeb;
+    background-repeat: repeat-x;    
+    width: 1450px;
+    margin-left: -10px;
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+}
+#header{
+    background-image: url("./Assets/pattern.png");
+    background-repeat: repeat-x;
+    height: 64px;
+    width: 1450px;
+    margin-left: -10px;
+}
+#background{
+    
+}
+#hidden {
     padding-top: 25px;
-    gap: 30px;
+    gap: 15px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    padding-left: 0;
+}
+nav ul {
+    background-color: #faf47a;
+    background-repeat: repeat-x;
+    width: 1450px;
+    margin-left: -10px;
+    padding-top: 5px;
+    gap: 5px;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -11,8 +51,203 @@ nav ul {
     display: flex;
     justify-content: center;
 }
+#crayonbox {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Assets/crayonbox.png);
+    background-repeat: no-repeat;
+    height: 549px;
+    width: 261px;
+    margin-top: 12px;
+}
+#crayonbox ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 25px
+}
+#crayonboxopen {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Assets/crayonboxopen.png);
+    background-repeat: no-repeat;
+    height: 549px;
+    width: 261px;
+    margin-top: 12px;
+}
+#crayonboxopen ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 25px
+}
+#crayonboxopen li {
+    text-align: center;
+}
+#crayonboxopen li a {
+    text-decoration: none;
+    color: black;
+}
+#crayonboxopen li a:visited {
+    color: black;
+}
+#crayonboxopen li a:hover {
+    text-decoration: underline;
+}
+#crayonboxopen li a:active {
+    color: white;
+}
+
+/* This is where the crayons start */
+.bcrayon {
+    background-image: url(./Assets/crayon-blue.png);
+    width: 213px;
+    background-repeat: no-repeat;
+    margin-left: -2px;
+}
+.ycrayon {
+    background-image: url(./Assets/crayon-yellow.png);
+    width: 213px;
+    background-repeat: no-repeat;
+    margin-left: -2px;
+}
+.rcrayon {
+    background-image: url(./Assets/crayon-red.png);
+    width: 213px;
+    background-repeat: no-repeat;
+    margin-left: -2px;
+}
+.gcrayon {
+    background-image: url(./Assets/crayon-green.png);
+    width: 213px;
+    background-repeat: no-repeat;
+    margin-left: -2px;
+}
+.subcrayon {
+    background-image: url(./Assets/crayon-blue.png);
+    margin-left: 5px;
+    width: 213px;
+    background-repeat: no-repeat;
+}
+.bsubcrayon {
+    background-image: url(./Assets/crayon-blue.png);
+    margin-left: 5px;
+    width: 213px;
+    background-repeat: no-repeat;
+}
+.gsubcrayon {
+    background-image: url(./Assets/crayon-blue.png);
+    margin-left: 5px;
+    width: 213px;
+    background-repeat: no-repeat;
+}
+.rsubcrayon {
+    background-image: url(./Assets/crayon-blue.png);
+    margin-left: 5px;
+    width: 213px;
+    background-repeat: no-repeat;
+}
+.ysubcrayon {
+    background-image: url(./Assets/crayon-blue.png);
+    margin-left: 5px;
+    width: 213px;
+    background-repeat: no-repeat;
+}
+
+/* This is where the crayons stop */
 .clipboard {
-    justify-content: center;
-    width: 200px;
-    background-image: url("./Assets/test\ sheet.png")
+    display: flex;
+    flex-direction: column;
+}
+#cliptop {
+    background-image: url(./Assets/cliptop.png);
+    height: 60px;
+    width: 720px;
+}
+#gcliptop {
+    background-image: url(./Assets/gcliptop.png);
+    height: 60px;
+    width: 720px;
+}
+#maintext {
+    background-image: url(./Assets/clipmiddle.png);
+    min-height: 900px;
+    background-size: 100%;
+    width: 720px;
+}
+#gmaintext {
+    background-image: url(./Assets/gclipmiddle.png);
+    min-height: 900px;
+    background-size: 100%;
+    width: 720px;
+}
+/* #textbody is what controls how the text I type appears! */
+#textbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#textcast {
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.character img {
+    border: black;
+    border-style: solid;
+}
+.character h1 {
+    margin-top: 0px;
+}
+#clipbottom {
+    background-image: url(./Assets/clipbottom.png);
+    height: 60px;
+    width: 720px;
+}
+#gclipbottom {
+    background-image: url(./Assets/gclipbottom.png);
+    height: 60px;
+    width: 720px;
+}
+#pagenum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px 
+}
+.misc {
+    background-color: #f099b2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1450px;
+    margin-left: -10px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.links ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    flex-shrink: 1;
+    padding-left: 0;
+}
+.links p {
+    text-align: center;
+}
+/* displays the pattern at the bottom */
+#footer{
+    background-image: url("./Assets/pattern.png");
+    background-repeat: repeat-x;
+    height: 64px;
+    width: 1450px;
+    margin-left: -10px;
 }

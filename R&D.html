@@ -7,23 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div id="header">  
+    </div> 
+    <div id="headline">
+        <p class="text">Support me!</p>
     </div>
     <div id="carousel">
 
     </div>
 <div id="background">
     <div id="socials">
-        <p> &gt;Support me! Buy some stuff!&lt; </p>
+        <p>  </p>
     </div>
     <div id="navlist">
         <!-- this is the list of link for the other pages on the site-->
         <nav>
             <ul>
-                <li><a href="Home.html"><img src="Assets/updates.png"></a></li>
-                <li><a href="R&D.html"><img src="Assets/RD.png"></a></li>
-                <li><a href="library.html"><img src="Assets/library.png"></a></li>
-                <li><a href="Home.html"><img src="Assets/cast.png"></a></li>
+                <li id="updates">
+                    <a href="Home.html">
+                        <img src="./Assets/updates.png" onmouseover="this.src='./Assets/updateshov.png';" onmouseout="this.src='./Assets/updates.png';">
+                    </a>
+                </li>
+                <li>
+                    <a href="R&D.html">
+                        <img src="Assets/RD.png" onmouseover="this.src='./Assets/RDhov.png';" onmouseout="this.src='./Assets/RD.png';">
+                    </a>
+                </li>
+                <li>
+                    <a href="library.html">
+                        <img src="Assets/Library.png" onmouseover="this.src='./Assets/LibraryHov.png';" onmouseout="this.src='./Assets/Library.png';">
+                    </a>
+                </li>
+                <li>
+                    <a href="Cast.html">
+                        <img src="Assets/Cast.png" onmouseover="this.src='./Assets/CastHov.png';" onmouseout="this.src='./Assets/Cast.png';">
+                    </a>
             </ul>
         </nav>
     </div>
@@ -31,33 +50,42 @@
         <!-- the meat of the page! this is where the two div boxes start-->
         <div id="crayonboxopen">
             <ul>
-                <li class="crayon">
-                <p>Chapter 1</p>
+                <li class="rcrayon">
+                    <p class="text">Hexbound Blood</p>
                 </li>
-                <li class="subcrayon">
-                    <p>Chapter 2</p>
-                    </li>
+                <li class="gcrayon">
+                    <p class="text">Frontier Dungeon</p>
+                </li>
             </ul>   
         </div>
     <div class="clipboard">
-            <div id="cliptop">
+            <div id="gcliptop">
             </div>
-            <div id="maintext">
+            <div id="gmaintext">
                 <div id="textbody">
-                    <h1>Frontier Dungeon: Shuffle Strike</h1>
+                    <h1 class="text">Frontier Dungeon: Shuffle Strike</h1>
                     <img>
-                    <p>Brave heroes flock to a wild Frontier full of newly formed dungeons. Build your party and get ready to draw tiles like your life depends on it, because it does!</p>
+                    <p class="text">Brave heroes flock to a wild Frontier full of newly formed dungeons. Build your party and get ready to draw tiles like your life depends on it, because it does!</p>
                 </div>
             </div>
-        <div id="clipbottom">
+        <div id="gclipbottom">
             <div id="pagenum">
                 <p class="text">Page 1</p>
             </div>
         </div>
     </div>
 </div>
-<body>
-    <div id="footer">  
+<div class="misc">
+    <div class="links">
+        <ul class="text">
+            <li> <a href="mailto:splishy@spacecraftclub.net">Contact me!</a></li>
+            <li>Bluesky</li>
+            <li><a href="https://splishy-splash.tumblr.com/" target="_blank" rel="noopener noreferrer">Tumblr</a>
+        </ul>
+        <p class="text"> &copy; 2025, @Splishyplash</p>
     </div>
+</div>
+<div id="footer">  
+</div>
 </body>
 </html>
