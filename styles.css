@@ -26,7 +26,7 @@ body {
     background-image: url("./Assets/pattern.png");
     background-repeat: repeat-x;
     height: 64px;
-    width: 1450px;
+    width: 100%;
 }
 #background{
     
@@ -287,7 +287,7 @@ nav li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 1450px;
+    width: 100%;
     margin-left: -10px;
 }
 #TWPS {
@@ -316,6 +316,6 @@ a.tumblr:visited, a.tumblr:link, a.mail:visited, a.mail:link {
     background-image: url("./Assets/pattern.png");
     background-repeat: repeat-x;
     height: 64px;
-    width: 1450px;
+    width: 100%;
     margin-left: -10px;
 }
