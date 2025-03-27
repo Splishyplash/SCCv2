@@ -4,12 +4,19 @@
 }
 .text {
     font-family: "SCC";
+    line-height: normal;
+}
+.Qtext {
+    font-family: "SCC";
+    align-self: last baseline;
+}
+body {
+    margin: 0px;
 }
 #headline {
     background-color: #8adbeb;
     background-repeat: repeat-x;    
     width: 1450px;
-    margin-left: -10px;
     padding-top: 5px;
     text-align: center;
     padding-bottom: 5px;
@@ -20,7 +27,6 @@
     background-repeat: repeat-x;
     height: 64px;
     width: 1450px;
-    margin-left: -10px;
 }
 #background{
     
@@ -37,15 +43,25 @@
 nav ul {
     background-color: #faf47a;
     background-repeat: repeat-x;
-    width: 1450px;
-    margin-left: -10px;
     padding-top: 5px;
     gap: 5px;
     list-style-type: none;
     display: flex;
     justify-content: center;
     flex-shrink: 1;
-    padding-left: 0;
+}
+nav li {
+    min-width: 32px;
+}
+#carousel {
+    width: 300px;
+    height: 105.5px;
+    object-fit: contain;
+    align-self: center;
+}
+#scroller {
+    display: flex;
+    justify-content: center;
 }
 .middle {
     display: flex;
@@ -56,6 +72,7 @@ nav ul {
     flex-direction: column;
     background-image: url(./Assets/crayonbox.png);
     background-repeat: no-repeat;
+    background-size: contain;
     height: 549px;
     width: 261px;
     margin-top: 12px;
@@ -72,6 +89,7 @@ nav ul {
     flex-direction: column;
     background-image: url(./Assets/crayonboxopen.png);
     background-repeat: no-repeat;
+    background-size: contain;
     height: 549px;
     width: 261px;
     margin-top: 12px;
@@ -95,6 +113,7 @@ nav ul {
 }
 #crayonboxopen li a:hover {
     text-decoration: underline;
+    text-underline-position: under;
 }
 #crayonboxopen li a:active {
     color: white;
@@ -107,11 +126,19 @@ nav ul {
     background-repeat: no-repeat;
     margin-left: -2px;
 }
+.bcrayon p{
+    margin-top: 14px;
+    text-underline-position: under;
+}
 .ycrayon {
     background-image: url(./Assets/crayon-yellow.png);
     width: 213px;
     background-repeat: no-repeat;
     margin-left: -2px;
+}
+.ycrayon p{
+    margin-top: 14px;
+    text-underline-position: under;
 }
 .rcrayon {
     background-image: url(./Assets/crayon-red.png);
@@ -119,11 +146,19 @@ nav ul {
     background-repeat: no-repeat;
     margin-left: -2px;
 }
+.rcrayon p{
+    margin-top: 14px;
+    text-underline-position: under;
+}
 .gcrayon {
     background-image: url(./Assets/crayon-green.png);
     width: 213px;
     background-repeat: no-repeat;
     margin-left: -2px;
+}
+.gcrayon p{
+    margin-top: 14px;
+    text-underline-position: under;
 }
 .subcrayon {
     background-image: url(./Assets/crayon-blue.png);
@@ -137,23 +172,39 @@ nav ul {
     width: 213px;
     background-repeat: no-repeat;
 }
+.bsubcrayon p {
+    margin-top: 14px;
+    text-underline-position: under;
+}
 .gsubcrayon {
-    background-image: url(./Assets/crayon-blue.png);
+    background-image: url(./Assets/crayon-green.png);
     margin-left: 5px;
     width: 213px;
     background-repeat: no-repeat;
+}
+.gsubcrayon p {
+    margin-top: 14px;
+    text-underline-position: under;
 }
 .rsubcrayon {
-    background-image: url(./Assets/crayon-blue.png);
+    background-image: url(./Assets/crayon-red.png);
     margin-left: 5px;
     width: 213px;
     background-repeat: no-repeat;
 }
+.rsubcrayon p {
+    margin-top: 14px;
+    text-underline-position: under;
+}
 .ysubcrayon {
-    background-image: url(./Assets/crayon-blue.png);
+    background-image: url(./Assets/crayon-yellow.png);
     margin-left: 5px;
     width: 213px;
     background-repeat: no-repeat;
+}
+.ysubcrayon p {
+    margin-top: 14px;
+    text-underline-position: under;
 }
 
 /* This is where the crayons stop */
@@ -187,15 +238,26 @@ nav ul {
 #textbody {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-left: 45px;
     padding-right: 45px;
+}
+#textbody h1 {
+    align-self: center;
+}
+#textbody h2 {
+    align-self: center;
+}
+#textbody h4 {
+    align-self: center;
 }
 #textcast {
     display: flex;
     flex-direction: column;
     padding-left: 45px;
     padding-right: 45px;
+}
+#changelog {
+    list-style-type: none;
 }
 .character img {
     border: black;
@@ -228,6 +290,9 @@ nav ul {
     width: 1450px;
     margin-left: -10px;
 }
+#TWPS {
+    width: fit-content;
+}
 .links {
     display: flex;
     flex-direction: column;
@@ -242,6 +307,9 @@ nav ul {
 }
 .links p {
     text-align: center;
+}
+a.tumblr:visited, a.tumblr:link, a.mail:visited, a.mail:link {
+    color:white;
 }
 /* displays the pattern at the bottom */
 #footer{
